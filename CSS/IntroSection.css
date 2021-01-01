@@ -1,0 +1,112 @@
+.IntroContainer {
+    position: relative;
+    /*background-color: #edc139;*/
+    background-color: #f8f9fa;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+
+.Intro {
+    display: flex;
+    align-items: center;
+    padding: 7px 0px;
+}
+
+.Intro #introImage {
+    margin: auto auto;
+    height: auto;
+    width: 100%;
+}
+
+.Intro #introImage img {
+    height: auto;
+    width: 100%;
+}
+
+.Intro #introText {
+    padding: 0px 30px;
+}
+
+.Intro #introHeading-1 {
+    font-size: 3rem;
+    font-family: 'Bungee', cursive;
+}
+
+.Intro #introHeading-2 {
+    font-size: 1.9rem;
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 2px;
+}
+
+.Intro #introPara {
+    font-size: 1.1rem;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.Intro .IntroButtonContainer #introButton {
+    background-color: #005bff;
+    border: 2px solid #007bff;
+	border-radius:5px;
+	cursor:pointer;
+	color:white;
+	font-size:1.2rem;
+	padding:10px 30px;
+	text-decoration:none;
+    text-shadow:0px 1px 50px #ffffff;
+    
+}
+
+#introHeading-1:after {
+    background: none repeat scroll 0 0 #005bff;
+    bottom: 2px;
+    content: "";
+    display: block;
+    height: 5px;
+    position: relative;
+    width: 200px;
+    opacity: 0.5;
+}
+
+@media (max-width : 992px) {
+    .IntroContainer .Intro {
+        flex-wrap: wrap;
+        text-align: center;
+        padding:10px 10px;
+    }
+
+    .Intro #introText {
+        padding: 30px 10px;
+    }
+
+    #introHeading-1:after {
+        background: none repeat scroll 0 0 #005bff;
+        bottom: 2px;
+        content: "";
+        display: block;
+        height: 5px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        opacity: 0.5;
+    }
+}
+
+@media (max-width : 480px) {
+    .Intro #introHeading-1 {
+        font-size: 2.5rem;
+    }
+    
+    .Intro #introHeading-2 {
+        font-size: 1.5rem;
+        font-family: 'Cinzel', serif;
+    }
+
+    .Intro #introImage img {
+        height: auto;
+        width: 300px;
+    }
+}

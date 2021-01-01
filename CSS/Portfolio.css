@@ -1,0 +1,57 @@
+.PortfolioContainer {
+    position: relative;
+    background-color: #f8f9fa;
+}
+
+.WE-Container,.CE-Container,.SE-Container, .OE-Container {
+    padding:30px 10px;
+}
+
+.CE-Container #ce-Heading-1, .WE-Container #we-Heading-1, .SE-Container #se-Heading-1, .OE-Container #oe-Heading-1 {
+    font-size: 3rem;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+}
+
+.CE-Container #ce-Heading-1:after, .WE-Container #we-Heading-1:after, .SE-Container #se-Heading-1:after, .OE-Container #oe-Heading-1:after {
+    background: none repeat scroll 0 0 #005bff;
+    bottom: 5px;
+    content: "";
+    display: block;
+    height: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    opacity: 0.5;
+}
+
+.PortfolioCard {
+    padding:1em 1em;
+    margin-top:40px;
+    background-color:#f8f9fa;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.PImage .PortfolioCard img {
+    height:auto;
+    width: 100%;
+    max-width:300px;
+}
+
+@media (max-width: 684px) {
+    #portfolioImgHeading {
+        padding: 8px 0px;
+    }
+
+    .WE-Container,.CE-Container,.SE-Container, .OE-Container {
+        padding:30px 0px;
+    }
+
+    .PortfolioCard {
+        margin-top:20px;
+        box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+        cursor: pointer;
+    }
+}

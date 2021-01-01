@@ -1,0 +1,150 @@
+/*
+Embedded Fonts From Google Fonts
+font-family: 'Acme', sans-serif;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Bungee Outline', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Galada', cursive;
+font-family: 'Holtwood One SC', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Shrikhand', cursive;
+font-family: 'Bungee', cursive;
+font-family: 'Coda Caption', sans-serif;
+font-family: 'Days One', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Secular One', sans-serif;
+font-family: 'Yellowtail', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bungee+Inline&family=Bungee+Outline&family=Cinzel:wght@500;600&family=Galada&family=Holtwood+One+SC&family=Lobster&family=Monoton&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Coda+Caption:wght@800&family=Days+One&family=Rubik+Mono+One&family=Secular+One&family=Yellowtail&display=swap');
+
+
+/*
+    Global CSS
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #f8f9fa;
+}
+
+/*
+
+Navigation Bar Starts 
+
+*/
+
+
+header {
+    background-color: #f8f9fa;
+    width: 100%;
+    z-index: 5;
+    padding: 15px 0px;
+    transition: 0.5s ease-in-out;
+    color:black;
+}
+
+.NavigationBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.NavigationBarContainer #logoName {
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    cursor: pointer;
+    padding: 5px 0px;
+    color: black;
+}
+
+.NavigationMenu #navItems {
+    padding: 10px 25px;
+    color: aliceblue;
+    transition: ease-in-out;
+}
+
+.NavigationMenu #navItems:hover {
+    background-color: blueviolet;
+}
+
+.NavigationMenu #navItems:hover, #navItems.active {
+    background-color: blueviolet;
+}
+
+.NavigationMenu a {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+@media (max-width:767px) {
+    .NavigationMenu #navItems {
+        padding: 0px 5px;
+    }
+}
+
+
+/*
+
+Navigation Bar Ends 
+
+*/
+
+
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  position: relative;
+  top: 35%;
+  transform: translateY(-35%);
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

@@ -1,0 +1,117 @@
+.VisitPortfolioContainer {
+    position: relative;
+    /*background-color: #edc139;*/
+    background-color: #f8f9fa;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+
+.VisitPortfolio {
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.VisitPortfolio #visitPortfolioImage {
+    margin: auto auto;
+    height: auto;
+    width: 70%;
+}
+
+.VisitPortfolio #visitPortfolioImage img {
+    height: auto;
+    width: 100%;
+}
+
+.VisitPortfolio #visitPortfolioText {
+    padding: 0px 30px;
+}
+
+.VisitPortfolio #visitPortfolioHeading-1 {
+    font-size: 3rem;
+    font-family: 'Bungee', cursive;
+}
+
+.VisitPortfolio #visitPortfolioHeading-1:after {
+    background: none repeat scroll 0 0 #005bff;
+    bottom: 5px;
+    content: "";
+    display: block;
+    height: 5px;
+    position: relative;
+    width: 200px;
+    opacity: 0.5;
+}
+
+.VisitPortfolio #visitPortfolioHeading-2 {
+    font-size: 1.9rem;
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 2px;
+}
+
+.VisitPortfolio #visitPortfolioPara {
+    font-size: 1.1rem;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.VisitPortfolio .VisitPortfolioButtonContainer #visitPortfolioButton {
+    background-color: #005bff;
+    border: 2px solid #007bff;
+	border-radius:5px;
+	cursor:pointer;
+	color:white;
+	font-size:1.2rem;
+	padding:10px 30px;
+	text-decoration:none;
+    text-shadow:0px 1px 50px #ffffff;
+    
+}
+
+@media (max-width : 992px) {
+    .VisitPortfolioContainer .VisitPortfolio {
+        flex-wrap: wrap;
+        text-align: center;
+        padding:50px 10px;
+    }
+
+    .VisitPortfolio #visitPortfolioText {
+        padding: 30px 10px;
+    }
+
+    .VisitPortfolio #visitPortfolioHeading-1:after {
+        background: none repeat scroll 0 0 #005bff;
+        bottom: 5px;
+        content: "";
+        display: block;
+        height: 5px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        opacity: 0.5;
+    }
+}
+
+@media (max-width : 480px) {
+    .VisitPortfolio #visitPortfolioHeading-1 {
+        font-size: 2.5rem;
+    }
+    
+    .VisitPortfolio #visitPortfolioHeading-2 {
+        font-size: 1.5rem;
+        font-family: 'Cinzel', serif;
+    }
+
+    
+    .VisitPortfolio #visitPortfolioImage {
+        width: 100%;
+    }
+
+    .VisitPortfolio #visitPortfolioImage img {
+        height: auto;
+        width: 300px;
+    }
+}

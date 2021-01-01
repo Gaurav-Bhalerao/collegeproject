@@ -1,0 +1,92 @@
+.ServicesContainer {
+    position: relative;
+    background-color: blueviolet;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.ServicesContainer .overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #7a7a7a56;
+}
+
+.ServicesContainer .Services {
+    position: relative;
+    z-index: 2;
+}
+
+.ServicesContainer .Services #servicesHeading-1 {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+}
+
+.ServicesContainer .Services #servicesHeading-1:after {
+    background: none repeat scroll 0 0 #005bff;
+    bottom: 5px;
+    content: "";
+    display: block;
+    height: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    opacity: 0.5;
+}
+
+.ServicesContainer .Services #servicesPara {
+    font-size: 1.1rem;
+    font-weight: bold;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.ServicesCardContainer {
+    text-align: center;
+}
+
+.ServicesCardContainer .ServicesCard {
+    padding: 10px 10px;
+    margin-top: 3rem;
+    color: white;
+}
+
+.ServicesCard #serCardImage {
+    text-align: center;
+}
+
+.ServicesCard #serCardImage img {
+    height: 70px;
+    width: 70px;
+}
+
+.ServicesCard #serCardHeading {
+    font-size: 1.2rem;
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+@media (max-width: 576) {
+    .ServicesCard #serCardImage img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .ServicesCard #serCardHeading {
+        font-size: 1rem;
+        font-family: 'Secular One', sans-serif;
+    }
+}
